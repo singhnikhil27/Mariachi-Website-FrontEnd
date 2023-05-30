@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600&family=Roboto:wght@400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto' , sans-serif;
+    text-decoration: none;
+    transition: all .2s linear;
+    text-transform: none;
+
+}
+:root{
+    --purple : #4a1831 ;
+    --skin : #ffd7ad;
+}
+
+html{
+    font-size: 62.5%; 
+    overflow-x: hidden;
+}
+
+body{
+    background-color: var(--skin);
+}
+
+header{
+    background-color: var(--purple);
+    
+}
+
+header .nav{
+    padding: 2.5rem ;
+    text-align: center;
+}
+
+header .nav a{
+    color: var(--skin);
+    padding: 0 3rem;
+    font-size: 1.5rem;
+}
+
+header .nav a:hover{
+    color: white;
+    font-size: large;
+}
+
+.home{
+    background-image: url('images/homeBanner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 78vh; */
+}
+
+
+.homeContainer{
+    padding-bottom: 5rem;
+    
+}
+.home .homeContainer > .logo{
+    margin-top: 4rem;
+    margin-left: 4rem;
+}
+
+.home .homeContainer > h1{
+    margin-top: 4rem;
+    margin-left: 4rem;
+    font-size: 12rem;
+    color: var(--skin);
+}
+
+.home .homeContainer > p{
+    margin-top: 4rem;
+    margin-left: 4rem;
+    width: 50% ;
+    color: var(--skin);
+    font-size: 1.7rem;
+    text-align: justify;
+}
+
+.home .homeContainer > .btn{
+    display: inline-block;
+    margin-top: 4rem;
+    margin-left: 4rem;
+ 
+    padding: 1.7rem 7rem;
+    border-radius: 3rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    background-color: var(--skin);
+    color: #4a1831;
+  
+}
+
+.home .homeContainer > .btn:hover{
+    background-color: aliceblue;
+    font-size:1.6rem ;
+  
+}
+
+/* menu */
+.menu{
+    background-color: var(--skin);
+}
+
+.menu > h1{
+    padding-top: 5rem;
+    text-align: center;
+    font-size: 7rem;
+    color: var(--purple);
+}
+
+.menu > p{
+    padding: 3rem 8%;
+    text-align: center;
+    color: var(--purple);
+    font-size: 1.7rem;
+  
+}
+
+.menu .button{
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    position: relative;
+    display: inline-block;
+    margin-top: 1.7rem;
+   
+    margin-bottom: 5rem;
+    padding: 1.7rem 7rem;
+    border-radius: 3rem;
+    font-size: 1.5rem;
+    /* font-weight: bolder; */
+    background-color: var(--purple);
+    color: var(--skin);
+    align-items: center;
+    justify-content: center;
+  
+}
+
+/* about */
+.about{
+    display: flex;
+    gap:6%;
+    background-color: var(--skin);
+}
+
+.about > img{
+    padding: 6rem;
+    max-width: 50%;
+  
+    height: auto   
+}
+
+.about .aboutText > h1{
+    margin-top: 16rem;
+    
+    font-size: 7rem;
+    color: var(--purple);
+}
+
+.about .aboutText > p{
+    margin-top: 4rem;
+    /* margin-left: 4rem; */
+    padding-right: 10rem;
+    color: var(--purple);
+    font-size: 1.7rem;
+    text-align: justify;
+}
+
+
+.about .aboutText > .btn{
+    margin-top: 4rem;
+}
+
+
+
+
+.btn:hover{
+  
+    color: white;
+    font-size:1.6rem ;
+  
+}
+
+.menuDown{
+    width: 100%;
+}
+
+/* discount */
+
+.discount{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.discount > img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* offer */
+
+.offer{
+    display: flex;
+    background-color: var(--purple);
+    gap: 5rem;
+ 
+}
+.offer .offerText > h1{
+    margin-top: 15rem;
+    margin-left: 5rem;
+    
+    font-size: 7rem;
+    color: var(--skin);
+}
+
+.offer .offerText > p{
+    margin-top:3rem;
+    margin-left: 5rem;
+    width: 90%;
+    color: var(--skin);
+    font-size: 1.7rem;
+    text-align: justify;
+}
+
+
+.offer .offerText > .btn{
+    margin-top: 4rem;
+    background-color: #ffd7ad;
+    color: #4a1831;
+    margin-left: 5rem;
+}
+
+.offer > img{
+    max-width: 50%;
+    height: auto;
+    margin: 5rem 0;
+}
+/* brandimg */
+.branding{
+    background-image: url('images/brandingbg.png');
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.branding > .brandinglogo {
+    margin-top: 10rem;
+
+}
+
+.branding > .brandingtext > p{
+    color: var(--skin);
+    margin: 10rem 9rem;
+    text-transform: none;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* contact  */
+
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    
+}
+
+.contact > h1{
+    text-align: center;
+    padding-top: 5rem;
+    color: #4a1831;
+    font-size: 8rem;
+   
+}
+
+.contact  > h1{
+    text-align: center;
+    padding-top: 5rem;
+    color: #4a1831;
+    font-size: 8rem;
+   
+}
+.contact .contactpara > p{
+    text-align: center;
+    padding-top: 5rem;
+    color: #4a1831;
+    font-size: 2rem;
+   
+}
+
+.contact .form{
+
+    margin: 3rem 0;
+}
+
+.contact .form > input{
+
+    padding:1rem 10rem 1rem 1rem;
+    border: 1px solid var(--purple);
+    border-radius: 2rem 0 0 2rem;
+
+}
+
+.contact .form  label > a{
+
+    padding:1rem 10rem 1rem 1rem;
+    border: none;
+    border-radius: 0 2rem 2rem 0;
+    padding: 1rem 3rem;
+}
+
+
+
+/* footer  */
+
+.footer > p {
+    font-size: 2rem;
+    background-color: #4a1831;
+    padding: 1rem 3rem;
+    color: var(--skin);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+
+
+
+
+/* media */
+@media(max-width : 763px)
+{
+    html{
+        font-size: 53%;
+    }
+
+    .home .homeContainer > p{
+        width: 80%;
+      }
+    
+    
+
+      /* About Responsive  */
+
+    .about , .offer{
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+    .about > img , .offer>img {
+       max-width: 100%;
+       height: auto;
+        
+    }
+
+    .about .aboutText > p , .offer .offerText > p{
+      padding: 0 4rem;
+      margin-left: 0;
+      text-align: center;
+    }
+
+    .about .aboutText > h1 , .offer .offerText > h1{
+        text-align: center;
+        margin-top: 2rem;
+        margin-left: 0;
+       
+    }
+
+    .aboutText , .offerText{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .discount > img{
+        max-width: 80%;
+        height: auto;
+    }
+    
+    .offer .offerText > btn{
+        margin-left: 0;
+    }
+
+    
+}
+
+
+    
+
+@media(max-width : 553px)
+{
+    html{
+        font-size: 53%;
+    }
+
+    header .nav a{
+        display: block;
+        padding: 2rem;
+        border-bottom: .1px solid var(--skin);
+    }
+    .home .homeContainer > p{
+        width: 80%;
+      }
+
+      .discount > img{
+        max-width: 60%;
+        height: auto;
+    }
+
+    .offer> img{
+        max-width: 60%;
+        height: auto;
+    }
+    
+    .home .homeContainer > p{
+        width: 80%;
+      }
+      
+    
+}
+
+@media(max-width:442px)
+{
+    .home .homeContainer > h1{
+        font-size: 8rem;
+    }
+}
+
